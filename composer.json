@@ -3,8 +3,8 @@
     "description": "Edit account model using livewire",
     "type": "library",
     "require": {
-        "laravel/framework": "8",
-        "livewire/livewire": "2"
+        "laravel/framework": "~8.x",
+        "livewire/livewire": "~2.x"
     },
     "license": "MIT",
     "authors": [
