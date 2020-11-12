@@ -15,6 +15,7 @@ class LWAPServiceProvider extends ServiceProvider
     {
         // register our controller
         // $this->app->make('Devdojo\Calculator\CalculatorController');
+        $this->loadViewsFrom(__DIR__ . '/views', 'lwap');
     }
 
     /**
