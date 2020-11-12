@@ -1,0 +1,17 @@
+{
+    "name": "akhaled/livewire-account-preferences",
+    "description": "Edit account model using livewire",
+    "type": "library",
+    "require": {
+        "laravel/framework": "8",
+        "livewire/livewire": "2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amro Khaled",
+            "email": "i@akhaled.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
