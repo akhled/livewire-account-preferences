@@ -2,7 +2,8 @@
 
 namespace Akhaled\LivewireAccountPreferences;
 
-use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferences;
+use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferencesEdit;
+use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferencesShow;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
@@ -29,6 +30,7 @@ class LWAPServiceProvider extends ServiceProvider
     {
         include __DIR__ . '/routes.php';
 
-        Livewire::component('account-preferences', AccountPreferences::class);
+        Livewire::component('account-preferences-edit', AccountPreferencesEdit::class);
+        Livewire::component('account-preferences-show', AccountPreferencesShow::class);
     }
 }

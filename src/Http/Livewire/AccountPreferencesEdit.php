@@ -5,7 +5,7 @@ namespace Akhaled\LivewireAccountPreferences\Http\Livewire;
 use Livewire\Component;
 use Illuminate\Support\Facades\Hash;
 
-class AccountPreferences extends Component
+class AccountPreferencesEdit extends Component
 {
     public $account;
     public $user;
@@ -49,6 +49,6 @@ class AccountPreferences extends Component
 
     public function render()
     {
-        return view($this->view ?? 'lwap::livewire.account-preferences');
+        return view($this->view ?? 'lwap::livewire.edit.account-preferences');
     }
 }
