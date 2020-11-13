@@ -2,6 +2,10 @@
 
 Display and update user preferences with livewire
 
+## [Installation](https://packagist.org/packages/akhaled/livewire-account-preferences)
+
+`composer require akhaled/livewire-account-preferences`
+
 ## How to use
 
 Very simple!
@@ -20,3 +24,5 @@ Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
     'view' => 'account.edit' // optional: create custom view
 ])
 ```
+
+The packages uses bootstrap 4 by default. In next release I will enable publishing views to your project directory so you can update them.
