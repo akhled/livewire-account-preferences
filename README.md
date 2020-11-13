@@ -17,6 +17,6 @@ Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
 ```php
 @livewire('account-preferences', [
     'account' => auth()->user()
-    'view' => 'account.edit' // create new view
+    'view' => 'account.edit' // optional: create custom view
 ])
 ```

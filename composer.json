@@ -2,7 +2,6 @@
     "name": "akhaled/livewire-account-preferences",
     "description": "Edit account model using livewire",
     "type": "library",
-    "version": "0.0.1",
     "require": {
         "laravel/framework": "^8.0",
         "livewire/livewire": "^2.0"
@@ -11,10 +10,11 @@
     "authors": [
         {
             "name": "Amro Khaled",
-            "email": "i@akhaled.com"
+            "email": "i@akhaled.com",
+            "homepage": "http://akhaled.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Akhaled\\LivewireAccountPreferences\\": "src"
