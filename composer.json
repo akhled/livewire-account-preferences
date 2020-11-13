@@ -13,5 +13,17 @@
             "email": "i@akhaled.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Akhaled\\LivewireAccountPreferences\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akhaled\\LivewireAccountPreferences\\LWAPServiceProvider"
+            ]
+        }
+    }
 }

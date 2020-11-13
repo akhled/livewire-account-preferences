@@ -1,6 +1,6 @@
 <?php
 
-namespace Akhaled\Http\Livewire;
+namespace Akhaled\LivewireAccountPreferences\Http\Livewire;
 
 use Livewire\Component;
 

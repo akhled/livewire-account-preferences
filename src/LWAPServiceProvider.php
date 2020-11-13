@@ -2,7 +2,7 @@
 
 namespace Akhaled\LivewireAccountPreferences;
 
-use Akhaled\Http\Livewire\AccountPreferences;
+use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferences;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
