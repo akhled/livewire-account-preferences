@@ -18,7 +18,12 @@ class LWAPServiceProvider extends ServiceProvider
     {
         // register our controller
         // $this->app->make('Devdojo\Calculator\CalculatorController');
+
+        // load views
         $this->loadViewsFrom(__DIR__ . '/views', 'lwap');
+
+        // publish config
+        $this->publishes([__DIR__ . '/../config/livewire-account-preferences.php' => config_path('livewire-account-preferences.php')], 'lwap-config');
     }
 
     /**
@@ -28,9 +33,14 @@ class LWAPServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__ . '/routes.php';
+        // register routes
+        // include __DIR__ . '/routes.php';
 
+        // register livewire components
         Livewire::component('account-preferences-edit', AccountPreferencesEdit::class);
         Livewire::component('account-preferences-show', AccountPreferencesShow::class);
+
+        // merge configurations
+        $this->mergeConfigFrom(__DIR__ . '/../config/livewire-account-preferences.php', 'lwap');
     }
 }

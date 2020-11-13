@@ -1,8 +1,13 @@
-# Welcome
+# Welcome <!-- omit in toc -->
 
 Display and update user preferences with livewire
 
 > The packages uses bootstrap 4 by default. In next release I will enable publishing views to your project directory so you can update them.
+
+- [Installation](#installation)
+- [How to use](#how-to-use)
+- [Define model fields](#define-model-fields)
+- [Available configuration](#available-configuration)
 
 ## [Installation](https://packagist.org/packages/akhaled/livewire-account-preferences)
 
@@ -12,13 +17,13 @@ Display and update user preferences with livewire
 
 Very simple!
 
-### 1. Add the `LivewireAccountServiceProvider` in `config/app.php` to app's providers:
+### 1. Add the `LivewireAccountServiceProvider` in `config/app.php` to app's providers <!-- omit in toc -->
 
 ```php
 Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
 ```
 
-### 2. Add livewire component markup in your code:
+### 2. Add livewire component markup in your code <!-- omit in toc -->
 
 ```php
 @livewire('account-preferences-edit', [
@@ -32,9 +37,10 @@ Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
 ])
 ```
 
-### 3. Extra config file
+### 3. Extra config file <!-- omit in toc -->
 
-Publish the configs: `php artisan vendor:publish --tag=table-config`
+Publish the configs: `php artisan vendor:publish --tag=lwap`.
+> See [available configuration](#available-configuration)
 
 ---
 

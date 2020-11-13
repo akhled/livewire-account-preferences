@@ -15,7 +15,9 @@
         </div>
     </div>
 
+    <a href="{{ config('livewire-account-preferences.routes.show', config('lwap.routes.show')) }}"
+        class="btn btn-danger">Cancel</a>
     <button type="submit" class="btn btn-success">Save</button>
-    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#changePasswordModal">Change
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#changePasswordModal">Change
         password</button>
 </form>

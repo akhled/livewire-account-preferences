@@ -49,6 +49,6 @@ class AccountPreferencesEdit extends Component
 
     public function render()
     {
-        return view($this->view ?? 'lwap::livewire.edit.account-preferences');
+        return view($this->view ?? config('livewire-account-preferences.views.edit', config('lwap.views.edit')));
     }
 }
