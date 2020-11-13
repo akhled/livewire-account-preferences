@@ -6,8 +6,28 @@ use Livewire\Component;
 
 class AccountPreferences extends Component
 {
+    public $account;
+    public $user;
+    public $view;
+
+    protected $rules = [
+        'user.name' => 'required|string|min:6',
+        'user.email' => 'required|string|max:500'
+    ];
+
+    public function mount()
+    {
+        $this->user = $this->account;
+    }
+
+    public function save()
+    {
+        $this->validate();
+        $this->user->save();
+    }
+
     public function render()
     {
-        return view('lwap.livewire.account-preferences');
+        return view($this->view ?? 'lwap::livewire.account-preferences');
     }
 }

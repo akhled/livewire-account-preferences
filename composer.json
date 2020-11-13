@@ -2,6 +2,7 @@
     "name": "akhaled/livewire-account-preferences",
     "description": "Edit account model using livewire",
     "type": "library",
+    "version": "0.0.1",
     "require": {
         "laravel/framework": "^8.0",
         "livewire/livewire": "^2.0"

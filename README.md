@@ -15,5 +15,8 @@ Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
 2. add livewire component markup in your code:
 
 ```php
-<livewire:user-preferences wire:model="User" /> // where User is user's eloquent model
+@livewire('account-preferences', [
+    'account' => auth()->user()
+    'view' => 'account.edit' // create new view
+])
 ```
