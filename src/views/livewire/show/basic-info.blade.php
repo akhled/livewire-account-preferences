@@ -1,9 +1,9 @@
-<form wire:submit.prevent="save" class="container">
+<div class="container">
     {{-- Name field --}}
     <div class="form-group row">
         <label for="accountName" class="col-2 col-form-label">Name</label>
         <div class="col-10">
-            <input type="text" class="form-control" name="accountName" id="accountName" wire:model="user.name">
+            {{ $name }}
         </div>
     </div>
 
@@ -11,11 +11,9 @@
     <div class="form-group row">
         <label for="accountEmail" class="col-2 col-form-label">Email</label>
         <div class="col-10">
-            <input type="email" class="form-control" name="accountEmail" id="accountEmail" wire:model="user.email">
+            {{ $email }}
         </div>
     </div>
 
-    <button type="submit" class="btn btn-success">Save</button>
-    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#changePasswordModal">Change
-        password</button>
-</form>
+    <a href="#" class="btn btn-primary">Edit</a>
+</div>
