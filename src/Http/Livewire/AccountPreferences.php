@@ -12,7 +12,8 @@ class AccountPreferences extends Component
 
     protected $rules = [
         'user.name' => 'required|string|min:6',
-        'user.email' => 'required|string|max:500'
+        'user.email' => 'required|email|max:500',
+        'user.password' => 'string|max:500'
     ];
 
     public function mount()
@@ -23,6 +24,12 @@ class AccountPreferences extends Component
     public function save()
     {
         $this->validate();
+        $this->user->save();
+    }
+
+    public function changePassword()
+    {
+        $this->validateOnly('user.password');
         $this->user->save();
     }
 
