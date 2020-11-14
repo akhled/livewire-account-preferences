@@ -18,7 +18,7 @@
 
                         @if ($errors->has('current_password'))
                             <span class="help-block">
-                                <strong>{{  $errors->first('current_password') }}</strong>
+                                <strong>@lang($errors->first('current_password'))</strong>
                             </span>
                         @endif
                     </div>

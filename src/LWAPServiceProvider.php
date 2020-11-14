@@ -23,7 +23,7 @@ class LWAPServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'lwap');
 
         // publish config
-        $this->publishes([__DIR__ . '/../config/livewire-account-preferences.php' => config_path('livewire-account-preferences.php')], 'lwap-config');
+        $this->publishes([__DIR__ . '/config/livewire-account-preferences.php' => config_path('livewire-account-preferences.php')], 'lwap-config');
     }
 
     /**
@@ -41,6 +41,6 @@ class LWAPServiceProvider extends ServiceProvider
         Livewire::component('account-preferences-show', AccountPreferencesShow::class);
 
         // merge configurations
-        $this->mergeConfigFrom(__DIR__ . '/../config/livewire-account-preferences.php', 'lwap');
+        $this->mergeConfigFrom(__DIR__ . '/config/livewire-account-preferences.php', 'lwap');
     }
 }

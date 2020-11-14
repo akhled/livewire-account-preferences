@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "laravel/framework": "^8.0",
-        "livewire/livewire": "^2.0"
+        "livewire/livewire": "^2.0",
+        "akhaled/livewire-sweetalert": "^0.0.1-beta"
     },
     "license": "MIT",
     "authors": [

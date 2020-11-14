@@ -38,7 +38,7 @@ class AccountPreferencesEdit extends Component
         ]);
 
         if (!Hash::check($this->current_password, $this->user->password)) {
-            $this->addError('current_password', 'Your current password is incorrect.');
+            $this->addError('current_password', 'validation.password');
             return;
         }
 

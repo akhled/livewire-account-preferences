@@ -17,27 +17,50 @@ Display and update user preferences with livewire
 
 Very simple!
 
-### 1. Add the `LivewireAccountServiceProvider` in `config/app.php` to app's providers <!-- omit in toc -->
+### 1. Add `LWAPServiceProvider` in `config/app.php` <!-- omit in toc -->
 
 ```php
-Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
+    ...
+    Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
+    ...
 ```
 
 ### 2. Add livewire component markup in your code <!-- omit in toc -->
 
+edit.blade.php
+
 ```php
+...
 @livewire('account-preferences-edit', [
     'account' => auth()->user()
-    'view' => 'account.edit' // optional: create custom view
+    'view' => 'account.edit' // optional, overrides global config property
 ])
-
-@livewire('account-preferences-show', [
-    'account' => auth()->user()
-    'view' => 'account.show' // optional: create custom view
-])
+...
 ```
 
-### 3. Extra config file <!-- omit in toc -->
+show.blade.php
+
+```php
+...
+@livewire('account-preferences-show', [
+    'account' => auth()->user()
+    'view' => 'account.show' // optional, overrides global config property
+])
+...
+```
+
+### 3. Include (livewire-sweetalert)[https://github.com/akhled/livewire-sweetalert] scripts along with @livewireScripts <!-- omit in toc -->
+
+If you want to enable sweetalert2 toast.
+
+```blade
+...
+    @livewireScripts
+    @livewireSweetalertScripts
+...
+```
+
+### 4. Extra config file <!-- omit in toc -->
 
 Publish the configs: `php artisan vendor:publish --tag=lwap`.
 > See [available configuration](#available-configuration)
