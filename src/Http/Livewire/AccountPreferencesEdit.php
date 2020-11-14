@@ -2,11 +2,14 @@
 
 namespace Akhaled\LivewireAccountPreferences\Http\Livewire;
 
+use Akhaled\LivewireSweetalert\Toast;
 use Livewire\Component;
 use Illuminate\Support\Facades\Hash;
 
 class AccountPreferencesEdit extends Component
 {
+    use Toast;
+
     public $account;
     public $user;
     public $view;
@@ -28,6 +31,8 @@ class AccountPreferencesEdit extends Component
     {
         $this->validate();
         $this->user->save();
+
+        $this->toast('Your information has been updated!', 'success');
     }
 
     public function changePassword()
@@ -38,7 +43,7 @@ class AccountPreferencesEdit extends Component
         ]);
 
         if (!Hash::check($this->current_password, $this->user->password)) {
-            $this->addError('current_password', 'validation.password');
+            $this->addError('current_password', 'Your current password is incorrect.');
             return;
         }
 
