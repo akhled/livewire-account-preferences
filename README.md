@@ -49,7 +49,7 @@ show.blade.php
 ...
 ```
 
-### 3. Include (livewire-sweetalert)[https://github.com/akhled/livewire-sweetalert] scripts along with @livewireScripts <!-- omit in toc -->
+### 3. Include [livewire-sweetalert](https://github.com/akhled/livewire-sweetalert) scripts along with @livewireScripts <!-- omit in toc -->
 
 If you want to enable sweetalert2 toast.
 

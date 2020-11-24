@@ -7,6 +7,11 @@
         "livewire/livewire": "^2.0",
         "akhaled/livewire-sweetalert": "^0.0.1-beta"
     },
+    "require-dev": {
+        "pestphp/pest": "^0.3.12",
+        "pestphp/pest-plugin-faker": "^0.3.1",
+        "phpunit/phpunit": "^9.3.3"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -27,5 +32,7 @@
                 "Akhaled\\LivewireAccountPreferences\\LWAPServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
