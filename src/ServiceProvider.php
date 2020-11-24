@@ -7,7 +7,7 @@ use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferencesShow;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
-class LWAPServiceProvider extends ServiceProvider
+class ServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -20,10 +20,10 @@ class LWAPServiceProvider extends ServiceProvider
         // $this->app->make('Devdojo\Calculator\CalculatorController');
 
         // load views
-        $this->loadViewsFrom(__DIR__ . '/views', 'lwap');
+        $this->loadViewsFrom(__DIR__ . '/views', 'livewire-account-preferences');
 
         // publish config
-        $this->publishes([__DIR__ . '/config/livewire-account-preferences.php' => config_path('livewire-account-preferences.php')], 'lwap-config');
+        $this->publishes([__DIR__ . '/config/livewire-account-preferences.php' => config_path('livewire-account-preferences.php')], 'livewire-account-preferences');
     }
 
     /**
@@ -41,6 +41,6 @@ class LWAPServiceProvider extends ServiceProvider
         Livewire::component('account-preferences-show', AccountPreferencesShow::class);
 
         // merge configurations
-        $this->mergeConfigFrom(__DIR__ . '/config/livewire-account-preferences.php', 'lwap');
+        $this->mergeConfigFrom(__DIR__ . '/config/livewire-account-preferences.php', 'livewire-account-preferences');
     }
 }

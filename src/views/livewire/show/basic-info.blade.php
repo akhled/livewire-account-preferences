@@ -15,5 +15,5 @@
         </div>
     </div>
 
-    <a href="{{ config('livewire-account-preferences.routes.edit', config('lwap.routes.edit')) }}" class="btn btn-primary">Edit</a>
+    <a href="{{ config('livewire-account-preferences.routes.edit') }}" class="btn btn-primary">Edit</a>
 </div>

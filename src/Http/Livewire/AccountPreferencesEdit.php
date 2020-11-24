@@ -94,6 +94,6 @@ class AccountPreferencesEdit extends Component
     {
         $this->showToastForValidationError();
 
-        return view($this->view ?? config('livewire-account-preferences.views.edit', config('lwap.views.edit')));
+        return view($this->view ?? config('livewire-account-preferences.views.edit'));
     }
 }

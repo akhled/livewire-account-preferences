@@ -2,8 +2,8 @@
 
 return [
     'views' => [
-        'show' => 'lwap::livewire.show.account-preferences',
-        'edit' => 'lwap::livewire.edit.account-preferences',
+        'show' => 'livewire-account-preferences::livewire.show.account-preferences',
+        'edit' => 'livewire-account-preferences::livewire.edit.account-preferences',
     ],
     'routes' => [
         'show' => '/account',

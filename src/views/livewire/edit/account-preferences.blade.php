@@ -1,5 +1,5 @@
 <div>
-    @include('lwap::livewire.edit.basic-info')
+    @include('livewire-account-preferences::livewire.edit.basic-info')
 
-    @include('lwap::livewire.edit.password-modal')
+    @include('livewire-account-preferences::livewire.edit.password-modal')
 </div>

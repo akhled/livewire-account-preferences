@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Akhaled\\LivewireAccountPreferences\\LWAPServiceProvider"
+                "Akhaled\\LivewireAccountPreferences\\ServiceProvider"
             ]
         }
     },

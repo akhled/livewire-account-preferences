@@ -1,3 +1,3 @@
 <div>
-    @include('lwap::livewire.show.basic-info')
+    @include('livewire-account-preferences::livewire.show.basic-info')
 </div>

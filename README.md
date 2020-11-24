@@ -17,11 +17,11 @@ Display and update user preferences with livewire
 
 Very simple!
 
-### 1. Add `LWAPServiceProvider` in `config/app.php` <!-- omit in toc -->
+### 1. Add `ServiceProvider` in `config/app.php` <!-- omit in toc -->
 
 ```php
     ...
-    Akhaled\LivewireAccountPreferences\LWAPServiceProvider::class
+    Akhaled\LivewireAccountPreferences\ServiceProvider::class
     ...
 ```
 
@@ -62,7 +62,7 @@ If you want to enable sweetalert2 toast.
 
 ### 4. Extra config file <!-- omit in toc -->
 
-Publish the configs: `php artisan vendor:publish --tag=lwap`.
+Publish the configs: `php artisan vendor:publish --tag=livewire-account-preferences`.
 > See [available configuration](#available-configuration)
 
 ---
