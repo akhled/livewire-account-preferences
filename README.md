@@ -2,12 +2,13 @@
 
 Display and update user preferences with livewire
 
-> The packages uses bootstrap 4 by default. In next release I will enable publishing views to your project directory so you can update them.
+> The packages uses **bootstrap 4** by default. In next release I will enable publishing views to your project directory so you can update them.
 
 - [Installation](#installation)
 - [How to use](#how-to-use)
 - [Define model fields](#define-model-fields)
 - [Available configuration](#available-configuration)
+- [Todo](#todo)
 
 ## [Installation](https://packagist.org/packages/akhaled/livewire-account-preferences)
 
@@ -103,3 +104,9 @@ class User
 - `routes`:
   - `edit`: Edit route name. Default is `/account`
   - `show`: Show route name. Default is `/account/edit`
+
+
+## Todo
+
+- [ ] Publish blade views
+- [ ] Tailwind views

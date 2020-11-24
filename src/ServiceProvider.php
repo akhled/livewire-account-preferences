@@ -4,10 +4,10 @@ namespace Akhaled\LivewireAccountPreferences;
 
 use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferencesEdit;
 use Akhaled\LivewireAccountPreferences\Http\Livewire\AccountPreferencesShow;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Livewire\Livewire;
 
-class ServiceProvider extends ServiceProvider
+class ServiceProvider extends LaravelServiceProvider
 {
     /**
      * Register services.

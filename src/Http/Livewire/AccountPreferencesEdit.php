@@ -70,6 +70,7 @@ class AccountPreferencesEdit extends Component
         $this->user->password = bcrypt($this->password);
         $this->user->save();
         $this->toast('Password has been changed!', 'success');
+        $this->emit('password-updated');
         $this->reset(['password', 'password_confirmation', 'current_password']);
     }
 

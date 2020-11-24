@@ -54,3 +54,13 @@
         </div>
     </div>
 </form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (Livewire == undefined) return;
+
+        Livewire.on('password-updated', function(data) {
+            $('#changePasswordModal').modal('hide');
+        })
+    })
+</script>
